@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Intelligence News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+        .top-stories {
+            margin-top: 20px;
+        }
+        .top-stories h2 {
+            color: #00ff00;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .story {
+            display: flex;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .story-number {
+            flex: 0 0 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .story-content {
+            flex: 1;
+        }
+        .story-image {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            background-color: #333;
+        }
+        .story h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+        }
+        .story-meta {
+            font-size: 0.8em;
+            color: #0066cc;
+        }
+        .story-comments {
+            color: #888;
+            margin-left: 10px;
+        }
+        .article {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .article h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .article p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .author {
+            color: #0066cc;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <svg class="logo" viewBox="0 0 300 100">
+            <style>
+                .text { font-family: 'Arial', sans-serif; font-weight: bold; letter-spacing: -1px; }
+                .machine { fill: #fff; }
+                .intelligence { fill: #0066cc; }
+                .dot { fill: #0066cc; }
+                @keyframes pulse {
+                    0%, 100% { opacity: 0.2; }
+                    50% { opacity: 1; }
+                }
+                .pulse { animation: pulse 2s infinite; }
+                @keyframes drawLine {
+                    to { stroke-dashoffset: 0; }
+                }
+                .connection {
+                    stroke: #0066cc;
+                    stroke-width: 0.5;
+                    stroke-dasharray: 50;
+                    stroke-dashoffset: 50;
+                    opacity: 0.6;
+                }
+            </style>
+            <text x="10" y="45" class="text machine" font-size="40">MACHINE</text>
+            <text x="10" y="85" class="text intelligence" font-size="40">INTELLIGENCE</text>
+            <circle class="dot" cx="285" cy="15" r="8"/>
+            <circle class="dot pulse" cx="285" cy="40" r="8"/>
+            <circle class="dot" cx="285" cy="65" r="8"/>
+            <path class="connection" d="M30,45 Q150,65 270,85">
+                <animate attributeName="stroke-dashoffset" from="50" to="0" dur="3s" fill="freeze" />
+            </path>
+            <path class="connection" d="M90,45 Q150,25 210,45">
+                <animate attributeName="stroke-dashoffset" from="50" to="0" dur="3s" fill="freeze" begin="0.5s" />
+            </path>
+            <path class="connection" d="M150,85 Q200,65 250,85">
+                <animate attributeName="stroke-dashoffset" from="50" to="0" dur="3s" fill="freeze" begin="1s" />
+            </path>
+        </svg>
+    </header>
+    <main>
+        <article class="article">
+            <h1>AI Advancements Raise Ethical Questions in Creative Industries</h1>
+            <p>Recent developments in artificial intelligence have sparked debates about the role of AI in creative fields. As machine learning models become more sophisticated, questions arise about authorship, originality, and the future of human creativity in an AI-assisted world.</p>
+            <p class="author">By Jane Smith | 6:00 PM GMT+3</p>
+        </article>
+        <section class="top-stories">
+            <h2>Top Stories</h2>
+            <div class="story">
+                <div class="story-number">1</div>
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>AI-powered drone swarms revolutionize search and rescue operations</h3>
+                    <div class="story-meta">
+                        EMMA WATSON 5:00 PM GMT+3
+                        <span class="story-comments">| 24 comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-number">2</div>
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>Quantum computing breakthrough paves way for next-gen AI systems</h3>
+                    <div class="story-meta">
+                        ALAN TURING 4:00 PM GMT+3
+                        <span class="story-comments">| 42 comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-number">3</div>
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>Ethical concerns arise as AI-generated content floods social media</h3>
+                    <div class="story-meta">
+                        GRACE HOPPER 1:27 PM GMT+3
+                        <span class="story-comments">| 136 comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-number">4</div>
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>Machine learning models predict climate change impacts with unprecedented accuracy</h3>
+                    <div class="story-meta">
+                        JAMES LOVELOCK 5:29 PM GMT+3
+                        <span class="story-comments">| 89 comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-number">5</div>
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>AI-assisted drug discovery leads to breakthrough in cancer treatment</h3>
+                    <div class="story-meta">
+                        JENNIFER DOUDNA JUN 23
+                        <span class="story-comments">| 217 comments</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
